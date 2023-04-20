@@ -37,4 +37,9 @@ return require('packer').startup(function(use)
 
     use 'tpope/vim-fugitive'
 
+    use {
+        'kkoomen/vim-doge',
+        run = ':call doge#install()'
+    }
+
 end)

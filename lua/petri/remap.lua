@@ -8,3 +8,5 @@ vim.keymap.set("n", "<leader><Right>", vim.cmd.tabn)
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
+vim.keymap.set("n", "<C-f>", "<C-f>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
