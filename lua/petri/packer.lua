@@ -38,8 +38,11 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
 
     use {
-        'kkoomen/vim-doge',
-        run = ':call doge#install()'
+        "danymat/neogen",
+        config = function()
+            require('neogen').setup {}
+        end,
+        requires = "nvim-treesitter/nvim-treesitter",
     }
 
 end)
